@@ -1,3 +1,7 @@
+AudioShift 1.0.0-r9
+
+- New: the plugin checks for a newer release when opened and shows the release notes before installation.
+
 AudioShift 1.0.0-r8
 
 - Improved: beIN online EPG fallback handling for XTRA, MAX, and 4K channels.

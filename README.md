@@ -1,20 +1,26 @@
-# AudioShift distribution site
+# AudioShift (DreamOS)
 
-This is the local GitHub Pages repository prepared for the future
-`xFayez95/audioshift` repository.  Do not publish it until its URLs, release
-notes, and installer have been reviewed.
+AudioShift lets you watch a live satellite channel while listening to an IP
+commentary stream. It provides adjustable audio/video delay, RAM-backed video
+timeshift where available, playlist and Xtream source management, and online
+EPG mapping for supported channels.
 
-GitHub Pages serves `docs/`; GitHub Releases serve the package asset.  The
-installer always downloads the stable release filename
-`audioshift-dreamos.deb`.
+## Install
 
-Local test after creating the remote repository:
+Run this on the receiver through Telnet or SSH:
 
 ```sh
-git init
-git branch -M main
-git add docs .gitignore README.md
-git commit -m "Initial AudioShift distribution site"
-git remote add origin https://github.com/xFayez95/audioshift.git
-# Review before: git push -u origin main
+wget -O - https://xfayez95.github.io/audioshift/installer.sh | sh
+```
+
+The installer downloads the latest DreamOS package, installs it, and restarts
+Enigma2. You will then find **AudioShift** in the Plugin Browser, Extensions
+menu, and Audio menu.
+
+### Manual install
+
+```sh
+wget https://github.com/xFayez95/audioshift/releases/latest/download/audioshift-dreamos.deb
+dpkg -i audioshift-dreamos.deb
+systemctl restart enigma2
 ```
