@@ -1,3 +1,13 @@
+AudioShift 1.0.1-r0
+
+- Improved: Setup now explains that the QR code opens the web manager for playlists and audio sources.
+- Improved: EPG Mapping now opens with Online EPG by default; source order is Online EPG, Favourite Bouquets, then Satellite Bouquets.
+- Fixed: Playlist scrollbar now appears only when multiple pages exist and accurately reflects the current playlist page.
+- Improved: Main screen now uses its own consistent Audio Shift title bar on all images and skins.
+- Added: Main screen displays the installed AudioShift version.
+- Fixed: Removed the inconsistent title separator line and matched the version text colour to the selected AudioShift theme.
+- Fixed: Web picon lookup safely handles stream names containing Unicode characters.
+
 AudioShift 1.0.0-r9
 
 - New: the plugin checks for a newer release when opened and shows the release notes before installation.
