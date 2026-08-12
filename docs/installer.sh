@@ -6,6 +6,23 @@
 PLUGIN_NAME="AudioShift"
 PKG_URL="https://github.com/xFayez95/audioshift/releases/latest/download/audioshift-dreamos.deb"
 PKG_FILE="/tmp/audioshift-dreamos.deb"
+SUPPORTED_ARCH="arm64"
+
+require_dreamos_arm64() {
+    # DreamOS uses dpkg for its Enigma2 packages.  Check this before any
+    # network transfer, because the published AudioShift package is arm64.
+    if [ ! -f /var/lib/dpkg/status ] || ! command -v dpkg >/dev/null 2>&1; then
+        echo "ERROR: ${PLUGIN_NAME} is available for DreamOS receivers only."
+        exit 1
+    fi
+
+    ARCH="$(dpkg --print-architecture 2>/dev/null || true)"
+    if [ "$ARCH" != "$SUPPORTED_ARCH" ]; then
+        echo "ERROR: Unsupported architecture: ${ARCH:-unknown}."
+        echo "This AudioShift package requires DreamOS ${SUPPORTED_ARCH}."
+        exit 1
+    fi
+}
 
 NO_RESTART=0
 for arg in "$@"; do
@@ -13,6 +30,8 @@ for arg in "$@"; do
         --watch|--no-restart) NO_RESTART=1 ;;
     esac
 done
+
+require_dreamos_arm64
 
 echo "Downloading ${PLUGIN_NAME}..."
 rm -f "$PKG_FILE"
