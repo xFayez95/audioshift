@@ -1,0 +1,3 @@
+# The .deb is an immutable GitHub Release asset, never a Pages repository file.
+release/
+*.deb

@@ -1,0 +1,4 @@
+AudioShift 1.0.0-r8
+
+- Improved: beIN online EPG fallback handling for XTRA, MAX, and 4K channels.
+- Fixed: overlapping Opta 4K programme data is rejected instead of selecting an incorrect event.
