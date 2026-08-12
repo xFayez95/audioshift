@@ -1,3 +1,9 @@
+AudioShift 1.0.2-r0
+
+- Improved: The update check now runs every time AudioShift opens.
+- Improved: Update notices now use an AudioShift-styled screen with paged release notes and clear Later / Update now actions.
+- Fixed: Restarting Enigma2 after a successful in-plugin update no longer opens nested modal screens.
+
 AudioShift 1.0.1-r0
 
 - Improved: Setup now explains that the QR code opens the web manager for playlists and audio sources.
