@@ -1,3 +1,8 @@
+AudioShift 1.0.3-r0
+
+- Fixed: Corrected the Shahid MBC Masr channel ID to use the official MBC Masr feed.
+- Fixed: MBC 1, MBC Action, MBC Masr, and MBC Masr 2 no longer receive mixed programme data when Shahid returns its guide channels in a different order.
+
 AudioShift 1.0.2-r0
 
 - Improved: The update check now runs every time AudioShift opens.
