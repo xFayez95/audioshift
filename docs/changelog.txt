@@ -1,3 +1,10 @@
+AudioShift 1.0.4-r0
+
+- Improved audio playback reliability.
+- Improved stream handling and synchronisation.
+- Fixed minor stability issues.
+- Fixed audio-source picker text rendering on DreamOS skins.
+
 AudioShift 1.0.3-r0
 
 - Fixed: Corrected the Shahid MBC Masr channel ID to use the official MBC Masr feed.

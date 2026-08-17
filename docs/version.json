@@ -2,7 +2,7 @@
   "plugin": "AudioShift",
   "image": "dreamos",
   "package_type": "deb",
-  "latest_version": "1.0.3",
+  "latest_version": "1.0.4",
   "build": "r0",
   "download_url": "https://github.com/xFayez95/audioshift/releases/latest/download/audioshift-dreamos.deb",
   "installer_url": "https://xfayez95.github.io/audioshift/installer.sh",
