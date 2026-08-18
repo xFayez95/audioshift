@@ -1,3 +1,15 @@
+AudioShift 1.1.0-r0
+
+DreamOS changelog
+
+- Improved EPG Mapping with the live channel list.
+- Fixed missing channel names for saved Audio Shift profiles.
+- Improved Web Manager channel-name lookup and fallback behavior.
+- Fixed Setup navigation, wrapping, paging, and consistent row display when reopened.
+- Fixed Audio Source Page Up/Down to switch full pages.
+- Reduced unnecessary EPG log spam.
+- Added size-limited log rotation for Audio Shift logs.
+
 AudioShift 1.0.4-r0
 
 - Improved audio playback reliability.
