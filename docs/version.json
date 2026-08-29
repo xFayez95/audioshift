@@ -7,6 +7,13 @@
   "download_url": "https://github.com/xFayez95/audioshift/releases/latest/download/audioshift-dreamos.deb",
   "installer_url": "https://xfayez95.github.io/audioshift/installer.sh",
   "changelog_url": "https://xfayez95.github.io/audioshift/changelog.txt",
+  "changes": [
+    "Added FoxFM streams.",
+    "Added stream update checker for stream URLs and picons.",
+    "Improved playlist reload: adds new streams and removes obsolete ones.",
+    "Improved picon display and reliability.",
+    "Added automatic update-check option and manual Check now action."
+  ],
   "cortexa15hf-neon-vfpv4": {
     "py3.13": {
       "latest_version": "1.2.4",
