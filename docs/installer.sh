@@ -1,7 +1,7 @@
 #!/bin/sh
 # AudioShift one-line installer for DreamOS and supported OpenATV images.
 #
-# wget -O - https://xfayez95.github.io/audioshift/installer.sh | sh
+# wget --no-check-certificate -O - https://xfayez95.github.io/audioshift/installer.sh | sh
 
 PLUGIN_NAME="AudioShift"
 VERSION_URL="https://xfayez95.github.io/audioshift/version.json"

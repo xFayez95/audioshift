@@ -19,7 +19,7 @@ EPG mapping for supported channels.
 Run this on the receiver through Telnet or SSH:
 
 ```sh
-wget -O - https://xfayez95.github.io/audioshift/installer.sh | sh
+wget --no-check-certificate -O - https://xfayez95.github.io/audioshift/installer.sh | sh
 ```
 
 The installer detects DreamOS or an OE-Alliance IPK receiver, its architecture, and Python
@@ -30,7 +30,7 @@ integrity, installs it, and restarts Enigma2. You will then find
 Install without restarting Enigma2 automatically:
 
 ```sh
-wget -O - https://xfayez95.github.io/audioshift/installer.sh | sh -s -- --no-restart
+wget --no-check-certificate -O - https://xfayez95.github.io/audioshift/installer.sh | sh -s -- --no-restart
 ```
 
 ## Manual install
