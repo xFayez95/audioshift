@@ -10,9 +10,9 @@ EPG mapping for supported channels.
 | Image / receiver type | Package |
 | --- | --- |
 | DreamOS arm64 | `.deb` |
-| OpenATV 7.6 Cortex-A15, Python 3.13 | `.ipk` |
-| OpenATV 8.0 Cortex-A15, Python 3.14 | `.ipk` |
-| OpenATV 8.0 AArch64, Python 3.14 | `.ipk` |
+| OE-Alliance images, Cortex-A15, Python 3.13 | `.ipk` |
+| OE-Alliance images, Cortex-A15, Python 3.14 | `.ipk` |
+| OE-Alliance images, AArch64, Python 3.14 | `.ipk` |
 
 ## Install
 
@@ -22,7 +22,7 @@ Run this on the receiver through Telnet or SSH:
 wget -O - https://xfayez95.github.io/audioshift/installer.sh | sh
 ```
 
-The installer detects DreamOS or OpenATV, receiver architecture, and Python
+The installer detects DreamOS or an OE-Alliance IPK receiver, its architecture, and Python
 version. It downloads the matching latest package, verifies OpenATV package
 integrity, installs it, and restarts Enigma2. You will then find
 **AudioShift** in the Plugin Browser, Extensions menu, and Audio menu.
@@ -43,7 +43,7 @@ dpkg -i audioshift-dreamos.deb
 systemctl restart enigma2
 ```
 
-### OpenATV
+### OE-Alliance IPK images
 
 Download the IPK matching both your receiver architecture and Python version
 from the [latest release](https://github.com/xFayez95/audioshift/releases/latest),
