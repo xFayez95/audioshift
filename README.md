@@ -23,7 +23,7 @@ wget -O - https://xfayez95.github.io/audioshift/installer.sh | sh
 ```
 
 The installer detects DreamOS or an OE-Alliance IPK receiver, its architecture, and Python
-version. It downloads the matching latest package, verifies OpenATV package
+version. It downloads the matching latest package, verifies IPK package
 integrity, installs it, and restarts Enigma2. You will then find
 **AudioShift** in the Plugin Browser, Extensions menu, and Audio menu.
 
