@@ -1,3 +1,11 @@
+AudioShift 1.2.4
+
+- Added FoxFM streams.
+- Added stream update checker for stream URLs and picons.
+- Improved playlist reload: adds new streams and removes obsolete ones.
+- Improved picon display and reliability.
+- Added automatic update-check option and manual Check now action.
+
 AudioShift 1.1.0-r0
 
 DreamOS changelog

@@ -2,9 +2,37 @@
   "plugin": "AudioShift",
   "image": "dreamos",
   "package_type": "deb",
-  "latest_version": "1.1.0",
+  "latest_version": "1.2.4",
   "build": "r0",
   "download_url": "https://github.com/xFayez95/audioshift/releases/latest/download/audioshift-dreamos.deb",
   "installer_url": "https://xfayez95.github.io/audioshift/installer.sh",
-  "changelog_url": "https://xfayez95.github.io/audioshift/changelog.txt"
+  "changelog_url": "https://xfayez95.github.io/audioshift/changelog.txt",
+  "cortexa15hf-neon-vfpv4": {
+    "py3.13": {
+      "latest_version": "1.2.4",
+      "build": "r0",
+      "architecture": "cortexa15hf-neon-vfpv4",
+      "package_name": "enigma2-plugin-extensions-audioshift",
+      "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.2.4-r0/enigma2-plugin-extensions-audioshift-1.2.4-r0-cortexa15hf-neon-vfpv4-py3.13.ipk",
+      "sha256": "9dd5d5a76afe5d5e4db4e1146227d9cc995bfb6cc2a5913af5e1c8d5d7977889"
+    },
+    "py3.14": {
+      "latest_version": "1.2.4",
+      "build": "r0",
+      "architecture": "cortexa15hf-neon-vfpv4",
+      "package_name": "enigma2-plugin-extensions-audioshift",
+      "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.2.4-r0/enigma2-plugin-extensions-audioshift-1.2.4-r0-cortexa15hf-neon-vfpv4-py3.14.ipk",
+      "sha256": "7b17edb0c8c3ccf76b5a648f4b5c04d47fdaf2151638cd782a1211e740162d79"
+    }
+  },
+  "aarch64": {
+    "py3.14": {
+      "latest_version": "1.2.4",
+      "build": "r0",
+      "architecture": "aarch64",
+      "package_name": "enigma2-plugin-extensions-audioshift",
+      "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.2.4-r0/enigma2-plugin-extensions-audioshift-1.2.4-r0-aarch64-py3.14.ipk",
+      "sha256": "d84542cba91dfb18b93f07cf7fed877a7287f16578b136c7c21650605985e942"
+    }
+  }
 }
