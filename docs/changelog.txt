@@ -1,3 +1,8 @@
+AudioShift 1.2.4-r2 (Cortex IPK)
+
+- Fixed the update-check startup crash on Python 3.13 and Python 3.14.
+- Fixed non-DreamOS playback incorrectly requiring DreamOS ALSA routing.
+
 AudioShift 1.2.4
 
 - Added FoxFM streams.

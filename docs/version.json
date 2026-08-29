@@ -17,19 +17,27 @@
   "cortexa15hf-neon-vfpv4": {
     "py3.13": {
       "latest_version": "1.2.4",
-      "build": "r0",
+      "build": "r2",
       "architecture": "cortexa15hf-neon-vfpv4",
       "package_name": "enigma2-plugin-extensions-audioshift",
-      "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.2.4-r0/enigma2-plugin-extensions-audioshift-1.2.4-r0-cortexa15hf-neon-vfpv4-py3.13.ipk",
-      "sha256": "9dd5d5a76afe5d5e4db4e1146227d9cc995bfb6cc2a5913af5e1c8d5d7977889"
+      "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.2.4-r0/enigma2-plugin-extensions-audioshift-1.2.4-r2-cortexa15hf-neon-vfpv4-py3.13.ipk",
+      "sha256": "defbc604578c0afc71a6e94c845e5cabc36f3ff2295e89fe98053921063e6a26",
+      "changes": [
+        "Fixed a startup crash caused by the update-check setting.",
+        "Fixed non-DreamOS playback incorrectly requiring DreamOS ALSA routing."
+      ]
     },
     "py3.14": {
       "latest_version": "1.2.4",
-      "build": "r0",
+      "build": "r2",
       "architecture": "cortexa15hf-neon-vfpv4",
       "package_name": "enigma2-plugin-extensions-audioshift",
-      "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.2.4-r0/enigma2-plugin-extensions-audioshift-1.2.4-r0-cortexa15hf-neon-vfpv4-py3.14.ipk",
-      "sha256": "7b17edb0c8c3ccf76b5a648f4b5c04d47fdaf2151638cd782a1211e740162d79"
+      "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.2.4-r0/enigma2-plugin-extensions-audioshift-1.2.4-r2-cortexa15hf-neon-vfpv4-py3.14.ipk",
+      "sha256": "b248295828ffb83ef262daed7b8c64b7efcddc20ec89f557087c3031c08d3d8f",
+      "changes": [
+        "Fixed a startup crash caused by the update-check setting.",
+        "Fixed non-DreamOS playback incorrectly requiring DreamOS ALSA routing."
+      ]
     }
   },
   "aarch64": {
