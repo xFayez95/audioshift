@@ -33,7 +33,7 @@
       "architecture": "cortexa15hf-neon-vfpv4",
       "package_name": "enigma2-plugin-extensions-audioshift",
       "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.2.4-r0/enigma2-plugin-extensions-audioshift-1.2.4-r4-cortexa15hf-neon-vfpv4-py3.14.ipk",
-      "sha256": "e4da34fe672228c69eb47cdc16336b8a14ff359dc5d031a6d6ece8bd9a69eb3e",
+      "sha256": "722945b6f1e8caae0ac27488d87ac7a0b073f97a58ba0daf9b812bfd04b52316",
       "changes": [
         "Improved compatibility with OpenATV 8.0 and OpenBH 6.0 package dependencies."
       ]
