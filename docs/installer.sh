@@ -1,5 +1,5 @@
 #!/bin/sh
-# AudioShift one-line installer for DreamOS and supported OpenATV images.
+# AudioShift one-line installer for DreamOS and supported OE-Alliance images.
 #
 # wget --no-check-certificate -O - https://xfayez95.github.io/audioshift/installer.sh | sh
 
@@ -81,13 +81,13 @@ PY
 )" || fail "DreamOS package metadata is invalid"
     PACKAGE_FILE="$WORK_DIR/audioshift-dreamos.deb"
 else
-    command -v opkg >/dev/null 2>&1 || fail "supported DreamOS or OpenATV image not detected"
-    [ -n "$PYTHON_BIN" ] || fail "Python 3 is required to select the OpenATV package"
+    command -v opkg >/dev/null 2>&1 || fail "supported DreamOS or OE-Alliance image not detected"
+    [ -n "$PYTHON_BIN" ] || fail "Python 3 is required to select the OE-Alliance package"
     MACHINE="$(uname -m 2>/dev/null | tr '[:upper:]' '[:lower:]')"
     case "$MACHINE" in
         aarch64|arm64) ARCH="aarch64" ;;
         cortexa15*|armv7*|armv8*|arm*) ARCH="cortexa15hf-neon-vfpv4" ;;
-        *) fail "unsupported OpenATV architecture: ${MACHINE:-unknown}" ;;
+        *) fail "unsupported OE-Alliance architecture: ${MACHINE:-unknown}" ;;
     esac
     PYTHON_ABI="$("$PYTHON_BIN" -c 'import sys; print("py%d.%d" % sys.version_info[:2])' 2>/dev/null)"
     [ -n "$PYTHON_ABI" ] || fail "could not detect the Python version"
@@ -116,10 +116,10 @@ PY
     [ "$?" -eq 0 ] || fail "no package is published for $ARCH with $PYTHON_ABI"
     PACKAGE_URL="$(sed -n '1p' "$INFO_FILE")"
     PACKAGE_SHA256="$(sed -n '2p' "$INFO_FILE")"
-    [ -n "$PACKAGE_URL" ] && [ -n "$PACKAGE_SHA256" ] || fail "OpenATV package metadata is invalid"
+    [ -n "$PACKAGE_URL" ] && [ -n "$PACKAGE_SHA256" ] || fail "OE-Alliance package metadata is invalid"
     PACKAGE_TYPE="ipk"
     PACKAGE_FILE="$WORK_DIR/audioshift-update.ipk"
-    echo "Detected OpenATV package: $ARCH / $PYTHON_ABI"
+    echo "Detected OE-Alliance package: $ARCH / $PYTHON_ABI"
 fi
 
 echo "Downloading ${PLUGIN_NAME}..."
