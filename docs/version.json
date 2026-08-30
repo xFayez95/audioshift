@@ -17,14 +17,13 @@
   "cortexa15hf-neon-vfpv4": {
     "py3.13": {
       "latest_version": "1.2.4",
-      "build": "r2",
+      "build": "r3",
       "architecture": "cortexa15hf-neon-vfpv4",
       "package_name": "enigma2-plugin-extensions-audioshift",
-      "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.2.4-r0/enigma2-plugin-extensions-audioshift-1.2.4-r2-cortexa15hf-neon-vfpv4-py3.13.ipk",
-      "sha256": "defbc604578c0afc71a6e94c845e5cabc36f3ff2295e89fe98053921063e6a26",
+      "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.2.4-r0/enigma2-plugin-extensions-audioshift-1.2.4-r3-cortexa15hf-neon-vfpv4-py3.13.ipk",
+      "sha256": "969384925e4f8241101cd9a9e1b3d941b9ac32e954af09011235724b357821d6",
       "changes": [
-        "Fixed a startup crash caused by the update-check setting.",
-        "Fixed non-DreamOS playback incorrectly requiring DreamOS ALSA routing."
+        "Restored first-install playlist seeding and package maintainer scripts."
       ]
     },
     "py3.14": {

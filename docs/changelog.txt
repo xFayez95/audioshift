@@ -1,3 +1,7 @@
+AudioShift 1.2.4-r3 (Cortex Python 3.13)
+
+- Restored first-install playlist seeding and package maintainer scripts.
+
 AudioShift 1.2.4-r4 (Cortex Python 3.14)
 
 - Improved compatibility with OpenATV 8.0 and OpenBH 6.0 package dependencies.
