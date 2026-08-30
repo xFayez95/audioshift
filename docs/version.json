@@ -29,14 +29,13 @@
     },
     "py3.14": {
       "latest_version": "1.2.4",
-      "build": "r2",
+      "build": "r4",
       "architecture": "cortexa15hf-neon-vfpv4",
       "package_name": "enigma2-plugin-extensions-audioshift",
-      "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.2.4-r0/enigma2-plugin-extensions-audioshift-1.2.4-r2-cortexa15hf-neon-vfpv4-py3.14.ipk",
-      "sha256": "b248295828ffb83ef262daed7b8c64b7efcddc20ec89f557087c3031c08d3d8f",
+      "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.2.4-r0/enigma2-plugin-extensions-audioshift-1.2.4-r4-cortexa15hf-neon-vfpv4-py3.14.ipk",
+      "sha256": "e4da34fe672228c69eb47cdc16336b8a14ff359dc5d031a6d6ece8bd9a69eb3e",
       "changes": [
-        "Fixed a startup crash caused by the update-check setting.",
-        "Fixed non-DreamOS playback incorrectly requiring DreamOS ALSA routing."
+        "Improved compatibility with OpenATV 8.0 and OpenBH 6.0 package dependencies."
       ]
     }
   },

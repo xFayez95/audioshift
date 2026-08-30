@@ -1,3 +1,7 @@
+AudioShift 1.2.4-r4 (Cortex Python 3.14)
+
+- Improved compatibility with OpenATV 8.0 and OpenBH 6.0 package dependencies.
+
 AudioShift 1.2.4-r2 (Cortex IPK)
 
 - Fixed the update-check startup crash on Python 3.13 and Python 3.14.
