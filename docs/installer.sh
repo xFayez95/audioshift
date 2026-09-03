@@ -55,11 +55,13 @@ mkdir -p "$WORK_DIR" || fail "cannot create temporary directory"
 fetch "$VERSION_URL" "$MANIFEST_FILE" || fail "could not download update metadata"
 
 PYTHON_BIN=""
-if command -v python3 >/dev/null 2>&1; then
-    PYTHON_BIN="python3"
-elif command -v python >/dev/null 2>&1; then
-    PYTHON_BIN="python"
-fi
+for candidate in python3 python; do
+    if command -v "$candidate" >/dev/null 2>&1 \
+        && "$candidate" -c 'import json' >/dev/null 2>&1; then
+        PYTHON_BIN="$candidate"
+        break
+    fi
+done
 
 if [ -f /var/lib/dpkg/status ] && command -v dpkg >/dev/null 2>&1; then
     PACKAGE_TYPE="deb"
