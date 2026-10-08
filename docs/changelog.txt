@@ -1,3 +1,7 @@
+AudioShift 1.6.0-r0
+
+- Fixed bugs.
+
 AudioShift 1.2.4-r3 (Cortex Python 3.13)
 
 - Restored first-install playlist seeding and package maintainer scripts.
