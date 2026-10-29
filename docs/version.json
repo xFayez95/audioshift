@@ -2,44 +2,44 @@
   "plugin": "AudioShift",
   "image": "dreamos",
   "package_type": "deb",
-  "latest_version": "1.6.0",
+  "latest_version": "1.6.2",
   "build": "r0",
-  "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.6.0-r0/audioshift-dreamos.deb",
+  "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.6.2-r0/audioshift-dreamos.deb",
   "installer_url": "https://xfayez95.github.io/audioshift/installer.sh",
   "changelog_url": "https://xfayez95.github.io/audioshift/changelog.txt",
   "changes": [
-    "Fixed bugs."
+    "Fixed: stopping a commentary stream now fully releases the receiver's audio output. Previously the audio device could stay busy after Stop, blocking other applications and, on some receivers and images, leaving the TV sound silent until Enigma2 was restarted.",
+    "Improved: stopping a commentary stream is now instant."
   ],
   "cortexa15hf-neon-vfpv4": {
     "py3.13": {
-      "latest_version": "1.6.0",
+      "latest_version": "1.6.2",
       "build": "r0",
       "architecture": "cortexa15hf-neon-vfpv4",
       "package_name": "enigma2-plugin-extensions-audioshift",
-      "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.6.0-r0/enigma2-plugin-extensions-audioshift-1.6.0-r0-cortexa15hf-neon-vfpv4-py3.13.ipk",
-      "sha256": "f667b5fd672fefc6ac4b894b11ae0a5d7160f7d0432cf01808b4748e2a730031",
-      "changes": [
-        "Improved timeshift accuracy and stability."
-      ]
+      "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.6.2-r0/enigma2-plugin-extensions-audioshift-1.6.2-r0-cortexa15hf-neon-vfpv4-py3.13.ipk",
+      "sha256": "b2919a231468c7a741d52376ebcd6fc9254b6aed918a8f4b58d6f358d566e039",
+      "changes": []
     },
     "py3.14": {
-      "latest_version": "1.6.0",
+      "latest_version": "1.6.2",
       "build": "r0",
       "architecture": "cortexa15hf-neon-vfpv4",
       "package_name": "enigma2-plugin-extensions-audioshift",
-      "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.6.0-r0/enigma2-plugin-extensions-audioshift-1.6.0-r0-cortexa15hf-neon-vfpv4-py3.14.ipk",
-      "sha256": "9e9f91ad208760b1fafd0aa5d316911bcaa7c95cbbe5bf8c8a3233d5d73943de",
+      "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.6.2-r0/enigma2-plugin-extensions-audioshift-1.6.2-r0-cortexa15hf-neon-vfpv4-py3.14.ipk",
+      "sha256": "7cf8fe4c922beb3d04be69ef0428c0ca7b44ee3983560bdf45ec1695b4dd36c9",
       "changes": []
     }
   },
   "aarch64": {
     "py3.14": {
-      "latest_version": "1.6.0",
+      "latest_version": "1.6.2",
       "build": "r0",
       "architecture": "aarch64",
       "package_name": "enigma2-plugin-extensions-audioshift",
-      "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.6.0-r0/enigma2-plugin-extensions-audioshift-1.6.0-r0-aarch64-py3.14.ipk",
-      "sha256": "39d8c51f285cc8101ab4da4e1ae4cd68ec6a9cfc28cf1e6f037eb252fde81c9d"
+      "download_url": "https://github.com/xFayez95/audioshift/releases/download/v1.6.2-r0/enigma2-plugin-extensions-audioshift-1.6.2-r0-aarch64-py3.14.ipk",
+      "sha256": "d2b0290adeb4b2dbaf745bffd1accfaa9bbe669eb42d4c02b1d21c9f27a82076",
+      "changes": []
     }
   }
 }

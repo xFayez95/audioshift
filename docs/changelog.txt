@@ -1,3 +1,8 @@
+AudioShift 1.6.2-r0
+
+- Fixed: stopping a commentary stream now fully releases the receiver's audio output. Previously the audio device could stay busy after Stop, blocking other applications and, on some receivers and images, leaving the TV sound silent until Enigma2 was restarted.
+- Improved: stopping a commentary stream is now instant.
+
 AudioShift 1.6.0-r0
 
 - Fixed bugs.
